@@ -14,6 +14,7 @@ class SQLRunner
   def execute_insert_file
     sql = File.read("lib/insert.sql")
     @db.execute_batch(sql)
+    # insert file
   end
 
   def execute_select_file
